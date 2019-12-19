@@ -337,6 +337,9 @@ i {
   border-bottom: 1px #726f6f dashed;
   padding: 15px;
 }
+.home .content_item > li:last-child{
+  border: none;
+}
 .home .content_item h2 {
   font-family: 'Rancho', cursive;
   font-size: 30px;
@@ -367,6 +370,12 @@ i.lunch_dinner {
   background: url(../img/dinner.png) left top no-repeat;
   background-size: 40px;
 }
+i.wine {
+  width: 40px;
+  height: 40px;
+  background: url(../img/cheers.png) left top no-repeat;
+  background-size: 40px;
+}
 i.call {
   background: url(../img/call.png) left top no-repeat;
   background-size: 30px;
@@ -385,13 +394,10 @@ i.feedback {
 }
 
 /* ================================= */
-.menu_home_list .menu_item {
-  margin-bottom: 15px;
-}
-.menu_home_list .menu_item a {
+.menu_item_home a {
   color: #ffffff;
 }
-.menu_home_list .brief{
+.brief{
   font-size: 13px;
 }
 .content_item .b_hours h2 {
@@ -482,7 +488,7 @@ i.feedback {
   background: #000;
   color: #fff;
   margin: 20px 0 0;
-  padding: 15px 0;
+  padding: 15px 0 40px 0;
   font-size: 12px;
 }
 .footer_links li {
