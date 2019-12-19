@@ -296,9 +296,10 @@ ul{
 }
 .content{
   margin: 70px 0 0;
+  padding: 30px 0 0;
 }
 .content.home{
-  padding: 30px 0 0;
+  
 }
 .button{
   background: gray;
@@ -396,14 +397,29 @@ i.feedback {
 .brief{
   font-size: 13px;
 }
-.content_item .b_hours h2 {
+.b_hours {
+  padding: 15px;
+  background: #f15f2a;
+  color: #fff;
+  margin: 0 20px 0 10px;
+  box-shadow: 10px 10px 0 #f99e7c;
+}
+.b_hours h2 {
   text-align: left;
 }
-.content_item .b_hours ul {
+.b_hours ul {
   margin: 0 0 10px 0;
   font-size: 13px;
 }
-
+.b_hours ul li {
+  display: flex;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ef7a4f;
+}
+.b_hours ul li .day {
+  flex-grow: 1;
+}
 .content_item .location {
   padding: 15px 0 !important;
 }
