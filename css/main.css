@@ -303,7 +303,8 @@ ul{
 .button{
   background: gray;
   padding: 0 10px;
-  line-height: 35px;
+  font-size: 14px;
+  line-height: 30px;
   display: inline-block;
   border-radius: 3px;
   color: #fff;
@@ -316,8 +317,8 @@ ul{
 }
 i {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 /* ================================= */
@@ -359,20 +360,14 @@ i {
   margin: 0 15px 0 0;
 }
 i.tiffin {
-  width: 40px;
-  height: 40px;
   background: url(../img/dosa.png) left top no-repeat;
   background-size: 40px;
 }
 i.lunch_dinner {
-  width: 40px;
-  height: 40px;
   background: url(../img/dinner.png) left top no-repeat;
   background-size: 40px;
 }
 i.wine {
-  width: 40px;
-  height: 40px;
   background: url(../img/cheers.png) left top no-repeat;
   background-size: 40px;
 }
@@ -488,31 +483,39 @@ i.feedback {
   background: #000;
   color: #fff;
   margin: 20px 0 0;
-  padding: 15px 0 40px 0;
+  padding: 15px 0 20px 0;
   font-size: 12px;
 }
 .footer_links li {
   display: inline-block;
-  margin: 0 0 0 5px;
+  margin: 0 0 0 10px;
 }
 .footer_links li a {
   display: block;
   text-indent: -99999em;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 .footer_links li.fb a {
-  background: url(../img/facebook.png) center center/20px 20px;
+  background: url(../img/facebook.png) center center/25px 25px;
 }
 .footer_links li.insta a {
-  background: url(../img/instagram.png) center center/20px 20px;
+  background: url(../img/instagram.png) center center/25px 25px;
 }
 .footer_links li.yelp a {
-  background: url(../img/yelp.png) center center/20px 20px;
+  background: url(../img/yelp.png) center center/25px 25px;
 }
 .footer_links li.tripad a {
-  background: url(../img/tripadvisor.png) center center/20px 20px;
+  background: url(../img/tripadvisor.png) center center/25px 25px;
 }
 .footer_links li.contact a {
-  background: url(../img/phone.png) center center/20px 20px;
+  background: url(../img/phone.png) center center/25px 25px;
+}
+.footer_logo {
+  text-align: right;
+  margin: 15px 0 0;
+  padding: 0 10px;
+}
+.footer_logo img {
+  width: 50px;
 }
