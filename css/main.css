@@ -420,15 +420,6 @@ i.feedback {
 .b_hours ul li .day {
   flex-grow: 1;
 }
-.content_item .location {
-  padding: 15px 0 !important;
-}
-.location .icon_title {
-  margin: 0 15px 15px !important;
-}
-.location .icon_title .icon_desc {
-  overflow: hidden;
-}
 .map{
   width: 100%;
   height: 350px;
