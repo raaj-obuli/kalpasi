@@ -442,26 +442,32 @@ i.feedback {
 .menu_group_item {
   padding: 15px;
   max-height: 80px;
+  border-bottom: 1px #726f6f dashed;
   transition: max-height 2s;
+}
+.menu_group_item:last-child {
+  border: 0;
 }
 .menu_group_item.active {
   background: #fff;
   color: #000;
   max-height: 500em;
+  border: 0;
 }
 .menu_group_item h2 {
-  margin: 0 0 15px 0;
+  margin: 0;
   position: relative;
+  font-weight: normal;
 }
 .menu_group_item h2::after {
   content: '';
-  background: #f15f2a url(../img/arrow.png) 60% center/15px no-repeat;
+  background: #f15f2a url(../img/arrow.png) 60% center/12px no-repeat;
   position: absolute;
   right: 0;
   top: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
 }
 .menu_group_item.active h2::after {
   transform: rotate(90deg);
@@ -469,6 +475,7 @@ i.feedback {
 }
 .menu_group_item .menu_content {
   display: none;
+  margin: 15px 0 0 0;
 }
 .menu_group_item.active .menu_content {
   display: block;
@@ -485,11 +492,12 @@ i.feedback {
 }
 .menu_list .price {
   font-family: 'Rancho', cursive;
-  font-size: 18px;
+  font-size: 20px;
   color: #f15f2a;
 }
 .menu_list h3 {
   margin: 0 0 5px 0;
+  font-weight: normal;
 }
 .menu_list .brief {
   font-size: 13px;
