@@ -450,7 +450,7 @@ i.feedback {
 }
 .menu_banner .banner_content {
   height: 150px;
-  background: #00000061;
+  background: #000000a3;
   padding: 20px;
   transition: all 200ms ease-out;
 }
@@ -500,9 +500,26 @@ i.feedback {
   transform: rotate(90deg);
   transition: linear 200ms;
 }
+.menu_group_item h2 .type {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
 .menu_group_item .menu_content {
   display: none;
   margin: 15px 0 0 0;
+}
+.menu_content .desc {
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-size: 12px;
+  border-top: 2px solid #c4cb8d;
+  border-bottom: 2px solid #c4cb8d;
+  padding: 10px 0;
+}
+.menu_content footer {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 .menu_group_item.active .menu_content {
   display: block;
@@ -512,6 +529,11 @@ i.feedback {
   margin: 0 0 15px 0;
   padding: 0 0 15px 0;
   border-bottom: 1px dashed #b2b2b2;
+}
+.menu_list > li:last-child {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 .menu_list .food_detail {
   flex-grow: 2;
@@ -529,6 +551,15 @@ i.feedback {
 .menu_list .brief {
   font-size: 13px;
   font-style: italic;
+}
+.menu_list .menu_sub_group {
+  display: list-item;
+}
+.menu_sub_group .food_detail {
+  padding: 0;
+}
+.menu_list .desc {
+
 }
 /* ------ footer ------ */
 .footer {
