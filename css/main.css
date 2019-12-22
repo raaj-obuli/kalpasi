@@ -467,7 +467,6 @@ i.feedback {
   background: #0000007d;
 }
 .menu_group_item {
-  padding: 15px;
   max-height: 80px;
   border-bottom: 1px #726f6f dashed;
   transition: max-height 2s;
@@ -483,6 +482,7 @@ i.feedback {
 }
 .menu_group_item h2 {
   margin: 0;
+  padding: 15px;
   position: relative;
   font-weight: normal;
 }
@@ -490,8 +490,8 @@ i.feedback {
   content: '';
   background: #f15f2a url(../img/arrow.png) 60% center/12px no-repeat;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 15px;
+  top: 15px;
   width: 24px;
   height: 24px;
   border-radius: 12px;
@@ -506,7 +506,6 @@ i.feedback {
 }
 .menu_group_item .menu_content {
   display: none;
-  margin: 15px 0 0 0;
 }
 .menu_content .desc {
   text-align: center;
@@ -514,26 +513,26 @@ i.feedback {
   font-size: 12px;
   border-top: 2px solid #c4cb8d;
   border-bottom: 2px solid #c4cb8d;
-  padding: 10px 0;
+  padding: 10px;
+  margin: 0 15px;
 }
 .menu_content footer {
   font-size: 12px;
   font-weight: bold;
   margin-top: 10px;
+  padding: 0 15px 15px;
 }
 .menu_group_item.active .menu_content {
   display: block;
 }
 .menu_list > li {
   display: flex;
-  margin: 0 0 15px 0;
-  padding: 0 0 15px 0;
+  margin: 0 15px;
+  padding: 15px;
   border-bottom: 1px dashed #b2b2b2;
 }
 .menu_list > li:last-child {
   border: none;
-  margin: 0;
-  padding: 0;
 }
 .menu_list .food_detail {
   flex-grow: 2;
@@ -544,8 +543,9 @@ i.feedback {
   font-size: 20px;
   color: #f15f2a;
 }
-.menu_list h3 {
+.menu_list .food_detail h3 {
   margin: 0 0 5px 0;
+  padding: 0;
   font-weight: normal;
 }
 .menu_list .brief {
@@ -554,12 +554,26 @@ i.feedback {
 }
 .menu_list .menu_sub_group {
   display: list-item;
+  padding: 0;
+}
+.menu_list .menu_sub_group:nth-child(odd) {
+  background: #e8ecc9;
+}
+.menu_list .menu_sub_group:nth-child(even) {
+  background: #f2f2f2;
 }
 .menu_sub_group .food_detail {
   padding: 0;
 }
+.menu_sub_group h3 {
+  padding: 15px;
+  margin: 0;
+}
+.menu_list_sub li {
+  margin: 0;
+}
 .menu_list .desc {
-
+  margin: 0;
 }
 /* ------ footer ------ */
 .footer {
