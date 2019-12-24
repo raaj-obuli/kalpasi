@@ -334,20 +334,30 @@ i {
   text-align: center;
   margin: 0 0 20px 0;
 }
-.home .content_item {
+.nav {
+  display: none;
+}
+.home .nav {
+  display: block;
+}
+.nav {
   background: #0000007d;
 }
-.home .content_item a {
+.nav a {
   color: #fff;
 }
-.home .content_item > li {
+.nav li {
   border-bottom: 1px #726f6f dashed;
   padding: 15px;
 }
-.home .content_item > li:last-child{
+.nav li:last-child{
   border: none;
 }
-.home .content_item h2 {
+
+.nav li.location .desk{
+  display: none;
+}
+.nav h2 {
   font-family: 'Rancho', cursive;
   font-size: 30px;
   font-weight: normal;
@@ -355,7 +365,7 @@ i {
   margin: 0 0 15px 0;
   text-align: center;
 }
-.home .content_item h3{
+.nav h3{
   font-family: 'Rancho', cursive;
   font-size: 22px;
   font-weight: normal;
@@ -405,7 +415,7 @@ i.feedback {
   padding: 15px;
   background: #f15f2a;
   color: #fff;
-  margin: 0 20px 0 10px;
+  margin: 0 20px 30px 10px;
   box-shadow: 10px 10px 0 #f99e7c;
 }
 .b_hours h2 {
