@@ -1,0 +1,113 @@
+@media screen and (min-width: 1023px) {
+    .nav {
+        display: block;
+        flex-grow: 2;
+        order: 2;
+    }
+    .nav ul {
+        list-style: none;
+        display: flex;
+        margin: 10px 0 0 40px;
+    }
+    .nav li {
+        margin: 0 10px 0 0;
+    }
+    .nav a {
+        color: #fff;
+        font-size: 13px;
+        font-weight: bold;
+        transition: all 200ms;
+    }
+    .nav a:hover {
+        color: #f15f2a;
+    }
+    .order_wrap {
+        order: 3;
+    }
+    .wrapper {
+        background: none;
+    }
+    .content {
+        padding: 0;
+    }
+    .banner_wrap {
+        background: url(../img/wood_bg.jpg) center top/cover;
+        height: 500px;
+        display: flex;
+    }
+    .banner_img {
+        width: 50%;
+    }
+    .banner_content {
+        width: 50%;
+        padding: 50px;
+        margin: 50px 0 50px 0;
+        text-align: left;
+        box-sizing: border-box;
+        background: #0000007d;
+        font-family: 'Rancho', cursive;
+        font-size: 30px;
+        text-align: center;
+    }
+    .banner_content .title {
+        font-size: 55px;
+        color: #fff;
+        margin: 0 0 50px 0;
+        padding: 0 0 50px 0;
+        border-bottom: 3px solid #afca49;
+    }
+    .banner_content .brief {
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+    }
+    .menu_banner .banner_img {
+        background: none !important;
+        position: static;
+        width: 50%;
+        transition: none;
+    }
+    .menu_banner .banner_content {
+        height: auto;
+    }
+    .menu_banner .banner_content:hover {
+        background: #000000a3;
+    }
+    .mobile_home {
+        display: none;
+    }
+
+    /* menu page */
+    .menu_page {
+        background: #fff;
+    }
+    .menu_wrapper {
+        width: 980px;
+        margin: auto;
+    }
+    .menu_group_item h2 {
+        display: none;
+    }
+    #menu_tabs {
+        margin: 30px 0;
+    }
+    #menu_tabs {
+        list-style: none;
+        text-align: center;
+    }
+    #menu_tabs li {
+        display: inline-block;
+        max-height: 30px;
+    }
+    #menu_tabs a {
+        padding: 10px 15px;
+        background: #373434;
+        color: #fff;
+        border-radius: 5px;
+    }
+    #menu_tabs a:hover {
+        background: #f15f2a;
+    }
+    #menu_tabs a.active {
+        background: #f15f2a;
+    }
+}

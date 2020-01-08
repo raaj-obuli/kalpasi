@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/desktop.css">
 
   <meta name="theme-color" content="#fafafa">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Rancho&display=swap" rel="stylesheet">
@@ -28,67 +29,95 @@
     <!-- $header -->
     <header class="header">
       <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
-      <a href="https://www.doordash.com/store/kalpasi-indian-cuisine-herndon-102235/" class="button nav_order_now" target="_about">Order Now</a>
+      <div class="order_wrap">
+        <a href="https://www.doordash.com/store/kalpasi-indian-cuisine-herndon-102235/" class="button nav_order_now" target="_about">Order Now</a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="lunch_and_dinner.html">Lunch & Dinner</a>
+          </li>
+          <li>
+            <a href="tiffin.html">Dosa & Appam</a>
+          </li>
+          <li>
+            <a href="happy_hours.html">Happy Hour</a>
+          </li>
+          <li>
+            <a href="business_hours.html">Business Hours</a>
+          </li>
+          <li>
+            <a href="https://goo.gl/maps/zZ6ZcBmBxuyHuDKE8" target="_about">
+              Locate Us
+            </a>
+          </li>
+          <li>
+            <a href="tel:703-429-4388">703-429-4388</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- #header -->
 
     <!-- $content -->
     <section class="content home">
-      <div class="welcome">
-        Welcome to Authentic Indian Cuisine!
+      <div class="banner_wrap">
+        <div class="banner_img"> </div>
+        <div class="banner_content">
+          <h1 class="title">Authentic Indian Cuisine</h1>
+          <div class="brief">Reflecting Authentic and Seasonal Indian Food with Wine suggestions to evoke the spices and flavors of Chettinad</div>
+        </div>
       </div>
-      <nav>
-        <ul class="content_item">
-          <li class="menu_item_home">
-            <a href="lunch_and_dinner.html" class="icon_title">
-              <i class="lunch_dinner"></i>
-              <div class="icon_desc">
-                <h3>Lunch & Dinner</h3>
-                <div class="brief">Fresh, Lite and Natural</div>
-              </div>
-            </a>
-          </li>
-          <li class="menu_item_home">
-            <a href="tiffin.html" class="icon_title">
-              <i class="tiffin"></i>
-              <div class="icon_desc">
-                <h3>Tiffin</h3>
-                <div class="brief">Crispy Golden Delicious South Indian Treat</div>
-              </div>
-            </a>
-          </li>
-          <li class="menu_item_home">
-            <a href="happy_hours.html" class="icon_title">
-              <i class="wine"></i>
-              <div class="icon_desc">
-                <h3>Happy Hour</h3>
-                <div class="brief">Wine, Cocktails & Good stuff</div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="tel:703-429-4388" class="icon_title">
-              <h3>
-                <i class="call"></i>
-                <div class="icon_desc">703-429-4388</div>
-              </h3>
-            </a>
-          </li>
-          <li>
-            <a href="business_hours.html" class="icon_title">
-              <h3 class="icon_title"><i class="clock"></i>Business Hours</h3>
-            </a>
-          </li>
-          <li class="location">
-            <a href="https://goo.gl/maps/zZ6ZcBmBxuyHuDKE8" target="_about" class="icon_title">
-              <h3 class="icon_title">
-                <i class="pin"></i>
-                <div class="icon_desc">13055 Worldgate Drive, Herndon, VA</div>
-              </h3>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="content_item mobile_home">
+        <li class="menu_item_home">
+          <a href="lunch_and_dinner.html" class="icon_title">
+            <i class="lunch_dinner"></i>
+            <div class="icon_desc">
+              <h3>Lunch & Dinner</h3>
+              <div class="brief">Fresh, Lite and Natural</div>
+            </div>
+          </a>
+        </li>
+        <li class="menu_item_home">
+          <a href="tiffin.html" class="icon_title">
+            <i class="tiffin"></i>
+            <div class="icon_desc">
+              <h3>Tiffin</h3>
+              <div class="brief">Crispy Golden Delicious South Indian Treat</div>
+            </div>
+          </a>
+        </li>
+        <li class="menu_item_home">
+          <a href="happy_hours.html" class="icon_title">
+            <i class="wine"></i>
+            <div class="icon_desc">
+              <h3>Happy Hour</h3>
+              <div class="brief">Wine, Cocktails & Good stuff</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="tel:703-429-4388" class="icon_title">
+            <h3>
+              <i class="call"></i>
+              <div class="icon_desc">703-429-4388</div>
+            </h3>
+          </a>
+        </li>
+        <li>
+          <a href="business_hours.html" class="icon_title">
+            <h3 class="icon_title"><i class="clock"></i>Business Hours</h3>
+          </a>
+        </li>
+        <li class="location">
+          <a href="https://goo.gl/maps/zZ6ZcBmBxuyHuDKE8" target="_about" class="icon_title">
+            <h3 class="icon_title">
+              <i class="pin"></i>
+              <div class="icon_desc">13055 Worldgate Drive, Herndon, VA</div>
+            </h3>
+          </a>
+        </li>
+      </ul>
     </section>
     <!-- #content -->
 
@@ -101,9 +130,10 @@
         <li class="tripad"><a href="#" target="_about">Tripadvisor</a></li>
         <li class="contact"><a href="tel:+1-703-429-4388" target="_about">Contact</a></li>
       </ul>
-      <div class="footer_logo">
-        <img src="img/logo-gray.png" alt="">
+      <div class="copyright">
+        &copy; Kalpasi
       </div>
+      <div class="disclaimer"> We Serve Vegetarian, Non-Vegetarian and Gluten Free choices. We Serve halal meats and we do not add Lard or Monosodium Glutamate (MSG) to any of our food.</div>
     </footer>
     <!-- #footer -->
 
