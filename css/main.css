@@ -286,8 +286,7 @@ ul{
   margin: 0;
   padding: 0;
 }
-.header{
-  display: flex;
+.header {
   background: #000000b8;
   padding: 10px 0;
   position: fixed;
@@ -297,20 +296,16 @@ ul{
   width: 100%;
   z-index: 100;
 }
-.logo {
-  order: 1;
-}
 .logo img{
   float: left;
   width: 150px;
   margin-left: 15px;
 }
+.order_wrap {
+  order: 2;
+}
 .content{
   margin: 70px 0 0;
-  padding: 30px 0 0;
-}
-.content.home{
-  
 }
 .button{
   background: gray;
@@ -336,7 +331,7 @@ i {
 /* ================================= */
 .banner_content {
   text-shadow: -3px 5px 3px #000;
-  margin: 0 0 20px 0;
+  padding: 20px;
 }
 .home .content_item {
   background: #0000007d;
@@ -405,15 +400,20 @@ i.feedback {
 .brief{
   font-size: 13px;
 }
+.b_hours_page {
+  padding: 15px 0;
+}
 .b_hours {
   padding: 15px;
-  background: #f15f2a;
+  background: #000000a3;
   color: #fff;
-  margin: 0 20px 0 10px;
-  box-shadow: 10px 10px 0 #f99e7c;
+  margin: 0 15px;
 }
 .b_hours h2 {
   text-align: left;
+}
+.icon_title i {
+  float: left;
 }
 .b_hours ul {
   margin: 0 0 10px 0;
@@ -423,7 +423,7 @@ i.feedback {
   display: flex;
   margin-bottom: 5px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #ef7a4f;
+  border-bottom: 1px #726f6f dashed;
 }
 .b_hours ul li .day {
   flex-grow: 1;
@@ -459,10 +459,12 @@ i.feedback {
 .menu_banner:hover .banner_img{
   background-size: 110% auto;
 }
+.menu_banner .banner_img img {
+  display: none;
+}
 .menu_banner .banner_content {
   height: 150px;
   background: #000000a3;
-  padding: 20px;
   transition: all 200ms ease-out;
   position: relative;
   z-index: 10;
@@ -475,6 +477,9 @@ i.feedback {
   font-weight: normal;
   color: #f15f2a;
   text-shadow: 2px 2px 3px #000;
+}
+#menu_tabs {
+  display: none;;
 }
 .menu_group {
   background: #0000007d;

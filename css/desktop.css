@@ -1,4 +1,10 @@
 @media screen and (min-width: 1023px) {
+    .header {
+        display: flex;
+    }
+    .logo {
+      order: 1;
+    }
     .nav {
         display: block;
         flex-grow: 2;
@@ -37,6 +43,7 @@
     }
     .banner_img {
         width: 50%;
+        text-align: right;
     }
     .banner_content {
         width: 50%;
@@ -60,11 +67,23 @@
         font-family: 'Lato', sans-serif;
         font-size: 18px;
     }
+    .banner_wrap.tiffin img {
+        width: 750px;
+    }
+    .banner_wrap.lunch_dinner img {
+        width: 475px;
+    }
+    .banner_wrap.lunch_dinner .banner_img{
+        margin: 0 100px 0 0;
+    }
     .menu_banner .banner_img {
         background: none !important;
         position: static;
         width: 50%;
         transition: none;
+    }
+    .menu_banner .banner_img img {
+        display: block;
     }
     .menu_banner .banner_content {
         height: auto;
@@ -87,8 +106,21 @@
     .menu_group_item h2 {
         display: none;
     }
+    .menu_group_item h2::after {
+        display: none;
+    }
+    .menu_group_item.active h2 {
+        display: block;
+        text-align: center;
+        font-size: 35px;
+    }
+    .menu_group_item {
+        border: none;
+    }
     #menu_tabs {
-        margin: 30px 0;
+        display: block;
+        margin: 60px 0 30px 0;
+        line-height: 50px;
     }
     #menu_tabs {
         list-style: none;
@@ -109,5 +141,15 @@
     }
     #menu_tabs a.active {
         background: #f15f2a;
+    }
+    /* business hours page */
+    .b_hours_page {
+        background: #fff;
+    }
+    .b_hours {
+        width: 980px;
+        margin: auto;
+        background: none;
+        color: #000;
     }
 }

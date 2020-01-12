@@ -14,27 +14,32 @@ var MENU_GROUP            = 'menu_group',
     var _menuGroupElm = $(MENU_GROUP_CLASS),
         _menuTab      = $(MENU_TABS_ID);
 
+    function toggleMenu(element) {
+        var _this = $(element);
+
+        if (_this.parent(MENU_GROUP_ITEM_CLASS).hasClass(ACTIVE) === false) {
+            _menuGroupElm
+                .find(ACTIVE_CLASS)
+                .removeClass(ACTIVE);
+        }
+
+        _this
+            .parent(MENU_GROUP_ITEM_CLASS)
+            .toggleClass(ACTIVE);
+    }
+
     $(function() {
 
         /* mobile menu accordion */
-        _menuGroupElm.on(CLICK, H2, function() {
-            var _this = $(this);
-
-            if (_this.parent(MENU_GROUP_ITEM_CLASS).hasClass(ACTIVE) === false) {
-                _menuGroupElm
-                    .find(ACTIVE_CLASS)
-                    .removeClass(ACTIVE);
-            }
-
-            _this
-                .parent(MENU_GROUP_ITEM_CLASS)
-                .toggleClass(ACTIVE);
-        });
+        _menuGroupElm.on(CLICK, H2, toggleMenu);
 
         /* desktop menu tabs */
         _menuTab.on(CLICK, ANCHOR, function(e) {
-            var _this = $(this),
-                target = _this.data('target');
+            var _this          = $(this),
+                target         = _this.data('target'),
+                _targetElement = $('#'+target);
+
+            toggleMenu(_targetElement);
 
             if (_this.hasClass(ACTIVE) === false) {
                 _menuTab
@@ -44,10 +49,9 @@ var MENU_GROUP            = 'menu_group',
 
             _this.toggleClass(ACTIVE);
 
-            $('#'+target).trigger(CLICK);
-
             e.preventDefault();
         });
+
         _menuTab.find(ANCHOR).eq(0).trigger(CLICK);
     });
-})(window, jQuery)
+})(window, jQuery);
