@@ -403,11 +403,17 @@ i.feedback {
 .b_hours_page {
   padding: 15px 0;
 }
-.b_hours {
+.b_hours_wrap {
   padding: 15px;
   background: #000000a3;
   color: #fff;
   margin: 0 15px;
+}
+.b_hours_list {
+  list-style: none;
+}
+ul.b_hours_list > li {
+  display: block;
 }
 .b_hours h2 {
   text-align: left;
@@ -415,17 +421,17 @@ i.feedback {
 .icon_title i {
   float: left;
 }
-.b_hours ul {
+.b_hours {
   margin: 0 0 10px 0;
   font-size: 13px;
 }
-.b_hours ul li {
+.b_hours li {
   display: flex;
   margin-bottom: 5px;
   padding-bottom: 5px;
   border-bottom: 1px #726f6f dashed;
 }
-.b_hours ul li .day {
+.b_hours li .day {
   flex-grow: 1;
 }
 .map{
@@ -557,9 +563,8 @@ i.feedback {
   padding-right: 20px;
 }
 .menu_list .price {
-  font-family: 'Rancho', cursive;
-  font-size: 20px;
-  color: #f15f2a;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
 }
 .menu_list .food_detail h3 {
   margin: 0 0 5px 0;
