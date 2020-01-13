@@ -31,7 +31,9 @@ var MENU_GROUP            = 'menu_group',
     $(function() {
 
         /* mobile menu accordion */
-        _menuGroupElm.on(CLICK, H2, toggleMenu);
+        _menuGroupElm.on(CLICK, H2, function() {
+            toggleMenu(this);
+        });
 
         /* desktop menu tabs */
         _menuTab.on(CLICK, ANCHOR, function(e) {
