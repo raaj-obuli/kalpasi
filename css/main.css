@@ -268,9 +268,9 @@ textarea {
  */
 
 body{
-  background: #000;
+  background: #2d3c48;
   color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;;
 }
 .wrapper {
   background: url(../img/bg.png) repeat center fixed;
@@ -443,15 +443,24 @@ ul.b_hours_list > li {
 .menu_page {
   padding: 0;
 }
-.menu_banner {
+.banner_wrap {
   position: relative;
-  min-height: 150px;
+  height: 150px;
 }
-.menu_banner .banner_img {
+.banner_wrap .banner_img {
   position: absolute;
   width: 100%;
   height: 100%;
   transition: all 200ms ease-out;
+}
+.home_banner {
+  height: 200px;
+}
+.home_banner .banner_content h1 {
+  margin: 0 0 30px 0;
+}
+.home_banner .banner_img {
+  background: url(../img/home_bg.jpg) no-repeat center center/ 100% auto;
 }
 .menu_banner.tiffin .banner_img {
   background: url(../img/dosa_bg.jpeg) no-repeat center center/ 100% auto;
@@ -468,12 +477,13 @@ ul.b_hours_list > li {
 .menu_banner .banner_img img {
   display: none;
 }
-.menu_banner .banner_content {
-  height: 150px;
+.banner_content {
   background: #000000a3;
   transition: all 200ms ease-out;
   position: relative;
   z-index: 10;
+  height: 100%;
+  box-sizing: border-box;
 }
 .menu_banner .banner_content:hover {
   background: #0000007d;
@@ -525,7 +535,7 @@ ul.b_hours_list > li {
   transition: linear 200ms;
 }
 .menu_group_item h2 .type {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;;
   font-size: 16px;
 }
 .menu_group_item .menu_content {
@@ -563,7 +573,7 @@ ul.b_hours_list > li {
   padding-right: 20px;
 }
 .menu_list .price {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;;
   font-size: 13px;
 }
 .menu_list .food_detail h3 {
