@@ -8,10 +8,12 @@ var MENU_GROUP            = 'menu_group',
     ACTIVE_CLASS          = '.' + ACTIVE,
     MENU_TABS             = 'menu_tabs',
     MENU_TABS_ID          = '#' + MENU_TABS,
-    CLICK                 = 'click';
+    CLICK                 = 'click',
+    isMobile              = false;
 
 !(function name(window, $) {
-    var _menuGroupElm = $(MENU_GROUP_CLASS),
+    var _window       = $(window),
+        _menuGroupElm = $(MENU_GROUP_CLASS),
         _menuTab      = $(MENU_TABS_ID);
 
     function toggleMenu(element) {
@@ -32,7 +34,9 @@ var MENU_GROUP            = 'menu_group',
 
         /* mobile menu accordion */
         _menuGroupElm.on(CLICK, H2, function() {
-            toggleMenu(this);
+            if (isMobile) {
+                toggleMenu(this);
+            }
         });
 
         /* desktop menu tabs */
@@ -54,6 +58,14 @@ var MENU_GROUP            = 'menu_group',
             e.preventDefault();
         });
 
-        _menuTab.find(ANCHOR).eq(0).trigger(CLICK);
+        if (!isMobile) {
+            _menuTab.find(ANCHOR).eq(0).trigger(CLICK);
+        }
     });
+
+    function windowResize() {
+        isMobile = !!(_window.width() < 1024);
+    }
+    _window.resize(windowResize);
+    windowResize();
 })(window, jQuery);
