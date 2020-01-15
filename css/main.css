@@ -457,7 +457,7 @@ ul.b_hours_list > li {
   height: 200px;
 }
 .home_banner .banner_content h1 {
-  margin: 0 0 30px 0;
+  margin: 0 auto 30px auto;
 }
 .home_banner .banner_img {
   background: url(../img/home_bg.jpg) no-repeat center center/ 100% auto;

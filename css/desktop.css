@@ -183,6 +183,9 @@
         flex: auto;
         padding: 0 15px;
     }
+    ul.b_hours_list h3 {
+        font-size: 30px;
+    }
     .b_hours li {
         padding: 10px 0 15px 0;
     }
