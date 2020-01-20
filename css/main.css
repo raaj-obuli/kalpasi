@@ -272,6 +272,12 @@ body{
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;;
 }
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
 .wrapper {
   background: url(../img/bg.png) repeat center fixed;
 }
@@ -377,6 +383,10 @@ i.wine {
   background: url(../img/cheers.png) left top no-repeat;
   background-size: 40px;
 }
+i.buffet {
+  background: url(../img/buffet_white.png) left top no-repeat;
+  background-size: 40px;
+}
 i.call {
   background: url(../img/call.png) left top no-repeat;
   background-size: 30px;
@@ -454,14 +464,11 @@ ul.b_hours_list > li {
   height: 100%;
   transition: all 200ms ease-out;
 }
-.home_banner {
-  height: 200px;
-}
 .home_banner .banner_content h1 {
   margin: 0 auto 30px auto;
 }
 .home_banner .banner_img {
-  background: url(../img/home_bg.jpg) no-repeat center center/ 100% auto;
+  background: url(../img/home_bg.jpg) no-repeat center -80px/ 100% auto;
 }
 .menu_banner.tiffin .banner_img {
   background: url(../img/dosa_bg.jpeg) no-repeat center center/ 100% auto;
@@ -471,9 +478,6 @@ ul.b_hours_list > li {
 }
 .menu_banner.happy_hour .banner_img {
   background: url(../img/wine_bottles_bg.webp) no-repeat center center/ 100% auto;
-}
-.menu_banner:hover .banner_img{
-  background-size: 110% auto;
 }
 .menu_banner .banner_img img {
   display: none;
@@ -609,6 +613,31 @@ ul.b_hours_list > li {
 .menu_list .desc {
   margin: 0;
 }
+.catering_page {
+  background: #fff;
+  color: #000;
+}
+.catering {
+  list-style: none;
+  text-align: center;
+  padding: 0 0 20px 0;
+  overflow: hidden;
+}
+.catering li {
+  margin: 20px 20px 0;
+}
+.catering li:last-child {
+  margin-bottom: 0;
+}
+.catering h2 {
+  font-size: 34px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+.catering p {
+  font-size: 14px;
+  margin: 15px 0 0;
+}
 /* ------ footer ------ */
 .footer {
   background: #000;
@@ -636,8 +665,8 @@ ul.b_hours_list > li {
 .footer_links li.insta a {
   background: url(../img/instagram.png) center center/25px 25px;
 }
-.footer_links li.yelp a {
-  background: url(../img/yelp.png) center center/25px 25px;
+.footer_links li.doordash a {
+  background: url(../img/doordash.png) center center/25px auto no-repeat;
 }
 .footer_links li.tripad a {
   background: url(../img/tripadvisor.png) center center/25px 25px;
@@ -654,7 +683,7 @@ ul.b_hours_list > li {
 }
 .disclaimer {
   font-size: 10px;
-  color: #5c5c5c;
+  color: #e1dddd;
   clear: both;
   padding: 25px 0 0;
   text-align: center;

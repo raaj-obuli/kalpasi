@@ -1,4 +1,13 @@
 @media screen and (min-width: 1023px) {
+    body {
+        color: #000;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
     .header {
         display: flex;
         background: #fff;
@@ -160,13 +169,31 @@
         background: #f15f2a;
     }
     /* business hours page */
-    .b_hours_page {
+    .address {
+        text-align: center;
+        font-size: 30px;
+        margin: 25px 0 0;
+        font-family: 'Rancho', cursive;
+    }
+    .address a {
+        color: #000;
+        transition: all 100ms ease-out;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+    .address a:hover {
+        color: #f15f2a;
+    }
+    .b_hours_page,
+    .catering_page {
         background: #fff;
     }
-    .b_hours_page .home_banner {
+    .b_hours_page .home_banner,
+    .catering_page .home_banner {
         height: 300px;
     }
-    .b_hours_page .banner_content {
+    .b_hours_page .banner_content,
+    .catering_page .banner_content {
         margin: 0;
         height: 100%;
     }
@@ -185,9 +212,21 @@
     }
     ul.b_hours_list h3 {
         font-size: 30px;
+        font-weight: normal;
     }
     .b_hours li {
         padding: 10px 0 15px 0;
+    }
+    .catering_wrap {
+        width: 980px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .catering li {
+        display: inline-block;
+        float: left;
+        width: 310px;
+        margin: 30px 15px 30px 0;
     }
     .footer {
         background: #2d3c48;
