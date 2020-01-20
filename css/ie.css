@@ -1,0 +1,5 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .menu_list > li {
+        flex-basis: 44%;
+    }
+}
