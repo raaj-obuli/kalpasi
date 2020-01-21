@@ -188,6 +188,7 @@
     .b_hours_page,
     .catering_page {
         background: #fff;
+        color: #000;
     }
     .b_hours_page .home_banner,
     .catering_page .home_banner {

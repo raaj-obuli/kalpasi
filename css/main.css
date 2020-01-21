@@ -415,14 +415,10 @@ i.feedback {
 .brief{
   font-size: 13px;
 }
-.b_hours_page {
-  padding: 15px 0;
-}
 .b_hours_wrap {
   padding: 15px;
   background: #000000a3;
   color: #fff;
-  margin: 0 15px;
 }
 .b_hours_list {
   list-style: none;
@@ -618,8 +614,8 @@ ul.b_hours_list > li {
   margin: 0;
 }
 .catering_page {
-  background: #fff;
-  color: #000;
+  background: #0000007d;
+  color: #fff;
 }
 .catering {
   list-style: none;
