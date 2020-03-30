@@ -263,7 +263,7 @@ textarea {
   }
 }
 
-/* 
+/*
  * page styles
  */
 
@@ -377,6 +377,10 @@ i {
 }
 i.tiffin {
   background: url(../img/dosa.png) left top no-repeat;
+  background-size: 40px;
+}
+i.delivery {
+  background: url(../img/free-delivery.png) left top no-repeat;
   background-size: 40px;
 }
 i.lunch_dinner {
