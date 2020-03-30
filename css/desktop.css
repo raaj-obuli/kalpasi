@@ -78,7 +78,7 @@
     .menu_banner.tiffin .banner_img {
         background-image: url(../img/dosa_bg_desktop.jpg);
     }
-    .menu_banner.covid .banner_img {
+    .covid .banner_img {
         background-image: url(../img/covid-bg.jpg);
     }
     .banner_content {
