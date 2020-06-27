@@ -375,6 +375,10 @@ i {
   float: left;
   margin: 0 15px 0 0;
 }
+i.announcement {
+  background: url(../img/speaker.png) left top no-repeat;
+  background-size: 40px;
+}
 i.tiffin {
   background: url(../img/dosa.png) left top no-repeat;
   background-size: 40px;
